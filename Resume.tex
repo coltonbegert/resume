@@ -1,0 +1,296 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[margin=1in]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Colton}{Begert}
+\title{Resume}                               % optional, remove / comment the line if not wanted
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{41 Hillcrest Place, St. Albert, Alberta, Canada, T8N 6S2}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{1-780-996-3079}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{begert@ualberta.ca}                               % optional, remove / comment the line if not wanted
+\homepage{https://github.com/coltonbegert}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Undergraduate Computing Science Student at the University of Alberta}
+
+\section{Employment History}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+% \item{\cventry{May 2016--Current}{Research Assistant - Networks Lab}{University of Alberta}{Edmonton, Canada}{}{\vspace{3pt}I developed and deployed an embedded system for the AGE-WELL Smart Condo. This project included work from designing circuits, working with digital sensors, embedded development on an NRF52, Bluetooth communication stack for transmitting data, Raspberry Pi's for data collection, Sql Database and MQTT for data transfer and managing a server to process the data. \newline\newline I researched alternative ways to power low energy sensor nodes with methods such as solar and thermal energy harvesting which is to be published in 2018. }}
+\item{\cventry{May 2016--Current}{Research Assistant}{University of Alberta - Networks Lab}{Edmonton, Canada}{}{\vspace{3pt}
+\begin{itemize}
+    \item I developed and deployed an embedded system for the AGE-WELL Smart Condo which is a multi-department research group.
+    \item Included work from designing circuits, working with digital sensors, embedded development on an NRF52, Bluetooth communication stack for transmitting data, Raspberry Pi's for data collection, Sql Database and MQTT for data transfer and managing a server to process the data.
+    \item Researched alternative ways to power low energy sensor nodes with methods such as solar and thermal energy harvesting.
+    \item Created a support package for a customer who purchased the technologies that I developed.
+\end{itemize}
+\vspace{6pt}
+}}
+% \item{\cventry{May 2015 - August 2015}{Summer Intern}{Richard McDonald \& Associates}{Edmonton, Canada}{}{\vspace{3pt}A summer internship to develop a reporting system to integrate with their Enterprise Resource Planning Software. The job was mostly done in VBA and was used to pull data and make reports for employee performance. We tracked metrics on quoting, sales  and customer satisfaction which I integrated into a monthly report.}}
+\item{\cventry{May 2015 - August 2015}{Summer Intern}{Richard McDonald \& Associates}{Edmonton, Canada}{}{\vspace{3pt}
+\begin{itemize}
+    \item Summer internship to develop a reporting system to integrate with the company's Enterprise Resource Planning Software.
+    \item Done in VBA and was used to pull data and make reports for employee performance. We tracked metrics on quoting, sales  and, customer satisfaction, which I integrated into a monthly report.
+\end{itemize}
+\vspace{6pt}
+}}
+% \item{\cventry{Summers 2009-2014}{Shop Assembly and Testing}{Wave Control Systems}{Edmonton, Canada}{}{\vspace{3pt} I worked for five summers at an engineering and fabrication company on many million dollar projects. I worked with the engineers in the research and development department and in the fabrication shop assembling and testing skid packages for the oil sands with inspectors from multiple oil and gas companies. I helped prepare project documentation and also managed and updated the phone system every summer.}}
+\item{\cventry{Summers 2009-2014}{Shop Assembly and Testing}{Wave Control Systems}{Edmonton, Canada}{}{\vspace{3pt}
+\begin{itemize}
+    \item Five summers at an engineering and fabrication company, working on several million dollar projects.
+    \item I worked with the engineers in the research and development department.
+    \item I assembled and tested oil sand skid packages with inspectors from multiple oil and gas companies.
+    \item I helped prepare project documentation and also managed and updated the phone system every summer.
+\end{itemize}
+}}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2013 -- May 2018}{Computing Science Undergraduate}{University of Alberta}{Edmonton, Canada}{\textit{2016-17 GPA 3.8}}{}}
+
+\end{itemize}
+
+\subsection{Academic Scholarships}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2017}{By nomination from the Department of Computing Science}{Amdahl Academic Achievement Scholarship in Computing Science}{}{\textit{University of Alberta}}{}}
+
+\item{\cventry{2016, 2017}{Awarded by GPA}{University of Alberta Jason Lang Scholarship}{}{\textit{University of Alberta}}{}}
+
+% \item{\textbf{Campbell Soup Company Scholarship} \hfill   20137}
+% {\begin{flushright}2013
+% \end{flushright}
+\item{\cventry{2013}{High School GPA}{Campbell Soup Company Scholarship}{}{}{\vspace{3pt}}}
+
+\item{\cventry{2013}{High School GPA}{Alexander Rutherford Scholarship}{}{}{\vspace{3pt}}}
+\end{itemize}
+
+\vspace{2pt}
+
+
+% \pagebreak
+\section{Undergraduate Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+    \item{\textbf{CMPUT 401} \textit{Software Engineering - Currently in progress}
+        \vspace{3pt}
+
+        \begin{itemize}
+            \item Currently building a React Native cross platform app for a doctor in Hinton.
+            \item Simulates a vital monitor to aid in CPR and first response hospital drills.
+        \end{itemize}
+        \vspace{6pt}
+    }
+
+    \item{\textbf{CMPUT 466} \textit{Machine Learning}
+        \vspace{3pt}
+
+        \begin{itemize}
+            \item Developed a program to analyze stock prices and predict large changes in the market.
+            \item Created a data set using a real-time stock api and used multiple forms of regression and time series analysis on the data set.
+            \item Did not make me a millionaire as I had hoped.
+        \end{itemize}
+        \vspace{6pt}
+    }
+
+\item{\textbf{CMPUT 301} \textit{Development of an Android App for Ride Sharing}
+\vspace{3pt}
+
+\begin{itemize}
+    \item Developed an app for ride sharing with agile methodology with weekly scrum meetings and iterative design.
+    \item Built to a set of requirements and user stories with well written documentation.
+    % \item Iterative design and many other practices that go into good team development.
+    \item Used an Elastic Search back end and included many search and map api's to deliver an exceptional user experience.
+\end{itemize}
+% \small{In this course my team and I developed an app for ride sharing with agile methodology. We participated in weekly scrum meetings and built an app to a set of requirements and user stories and well written documentation. There was iterative design and many other practices that go into good team development.}}
+\vspace{6pt}
+}
+
+\item{\textbf{Undergraduate Individual Study} \textit{Wireless Sensor Networking}
+\vspace{3pt}
+
+\begin{itemize}
+    \item Built a discrete time, event driven simulator to predict the frequency of sensor node interactions as they move through a simulated space.
+    \item Used OpenGL graphics to render the simulation in an event driven manner to inject draw events to separate the physics engine and rendering.
+    \item Used an embedded device (MSP 432) that I designed to get atmospheric weather conditions and wifi RSSI measurements to test range and signal strength in differing weather conditions.
+    \item Used a Raspberry Pi to collect and process the data, with a cloud server to post it live to the web.
+
+\end{itemize}
+% \small{Over the course of this class I worked on two self guided projects. The first was a discrete time event driven simulator to predict the frequency of sensor node interactions as they move through a space. This had many interesting complications and when finished had OpenGL graphics to render the simulation.}}
+% \vspace{3pt}
+% \small{The second project was an embedded device that was designed to get atmospheric weather conditions and wifi RSSI measurements to test range and signal strength in differing weather conditions. The data was passed from low level embedded controllers (MSP432) to a Raspberry Pi and a cloud server for the data to be posted live on the web.}
+\vspace{6pt}
+}
+
+\item{\textbf{CMPUT 397} \textit{Information Retrieval}
+
+\vspace{3pt}
+
+% \small{Implemented a search engine that used inverted indexes and tf-idf and vector normalization to create a searchable movie review database. It had support for boolean queries and had modes which implemented other searching algorithms such as BM25 and Binary Independence Models.}}
+\begin{itemize}
+    \item Implemented a search engine that used inverted indexes and tf-idf and vector normalization to create a searchable movie review database.
+    \item Supported for boolean queries and had modes which implemented other searching algorithms such as BM25 and Binary Independence Models.
+\end{itemize}
+\vspace{6pt}
+}
+
+% \item{\textbf{CMPUT 391} \textit{Databases: SPARQL Query processor}
+
+% \vspace{3pt}
+
+% \begin{itemize}
+%     \item Created a query parser for the SPARQL language.
+%     \item This parser allowed for the searching of http://wiki.dbpedia.org and other RDF semantic web graphs.
+%     \item Worked with semantic relations in fact checking news stories.
+% \end{itemize}}
+% \small{In this project I created a query parser for the SPARQL language. SPARQL is an RDF language that is used to query the semantic web. This parser allowed for the searching of https://www.dbpedia.org and other RDF semantic web graphs.}}
+% \item{\textbf{3rd year individual Sudy:} \textit{'Artificial Neural Network Approach to Source Localisation in Radiation Portal Monitoring'}
+
+
+\end{itemize}
+
+\section{Technical Skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Proficient in: C, Python, Sql, Embedded C platforms (NRF52), Arduino, React-Native, Javascript, Java, Android, VBA, SPARQL, GO, HTML, \TeX
+
+\vspace{6pt}
+
+\item \textbf{Software Skills:} Linux and Unix command line, Git, Scrum and Agile Development.
+
+
+\vspace{6pt}
+
+\item \textbf{Other:}  Soldering, breadboarding for rapid prototyping, Oscilloscope and debugging of simple circuits.
+
+\end{itemize}
+
+\section{Interests and Extra-Curricular Activity}
+
+\begin{itemize}
+
+\item{\textbf{Hackathons}
+
+\vspace{3pt}
+
+% \small{Implemented a search engine that used inverted indexes and tf-idf and vector normalization to create a searchable movie review database. It had support for boolean queries and had modes which implemented other searching algorithms such as BM25 and Binary Independence Models.}}
+\begin{itemize}
+    \item Hacked Beta 2017: Won Best hardware hack for turning a midi controller into a chess board
+    \item Hacked 2018: Made an arduino based password manager with browser extension
+\end{itemize}
+\vspace{6pt}
+}
+
+
+
+\item{I am a member of the University of Alberta Triathlon Club where I train and compete for triathlons. It is a blend of my passions for running, biking and swimming.}
+
+\item{I assembled a 3D printer as a way to make custom hobby boxes for projects but have spent far too long on calibrating and printing cool things.}
+
+\item{Living close to the mountains has spawned a love for skiing.}
+
+\vspace{6pt}
+
+
+\end{itemize}
+
+\section{References}
+
+\vspace{6pt}
+ 
+\begin{itemize}
+
+\item{References available on request.}
+
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
